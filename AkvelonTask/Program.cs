@@ -7,7 +7,7 @@ namespace AkvelonTask
         static void Main(string[] args)
         {
             BalanceVerificator verificator = new BalanceVerificator();
-            Console.WriteLine("Write brackets string:");
+            Console.WriteLine("Write brackets:");
             while(true)
             {
                 string bracketsString = Console.ReadLine();

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AkvelonTask
-{
-    public class BalanceVerificator
-    {
+namespace AkvelonTask {
+
+    public class BalanceVerificator {
+
         private int GradationRoundBracket { get; set; }
         private List<int> IndexOpenRoundBracketList { get; set; }
         private int GradationBraces { get; set; }
@@ -165,16 +165,18 @@ namespace AkvelonTask
             }
         }
 
-        private void DeleteLastOpenIndex(Bracket bracket)
-        {
+        private void DeleteLastOpenIndex(Bracket bracket) {
+
             switch (bracket) {
 
                 case Bracket.RoundBracketOpen:
                     IndexOpenRoundBracketList.RemoveAt(IndexOpenRoundBracketList.Count - 1);
                     break;
+
                 case Bracket.BracesOpen:
                     IndexOpenBracesList.RemoveAt(IndexOpenBracesList.Count - 1);
                     break;
+
                 case Bracket.SquareBracketOpen:
                     IndexOpenSquareBracketList.RemoveAt(IndexOpenSquareBracketList.Count - 1);
                     break;

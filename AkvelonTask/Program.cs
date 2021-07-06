@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace AkvelonTask
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+namespace AkvelonTask {
+
+    class Program {
+
+        static void Main(string[] args) {
+
             BalanceVerificator verificator = new BalanceVerificator();
             Console.WriteLine("Write brackets:");
             while(true) {
@@ -16,15 +16,17 @@ namespace AkvelonTask
             }
         }
 
-        static void PrintResult(int result)
-        {
-            switch (result)
-            {
+        static void PrintResult(int result) {
+
+            switch (result) {
+
                 case -2:
                     break;
+
                 case -1:
                     Console.WriteLine("BALANCED, returns -1");
                     break;
+
                 default:
                     Console.WriteLine("NOT BALANCED ({0}), returns {0}", result);
                     break;

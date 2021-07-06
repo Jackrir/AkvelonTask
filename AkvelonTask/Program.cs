@@ -8,8 +8,8 @@ namespace AkvelonTask
         {
             BalanceVerificator verificator = new BalanceVerificator();
             Console.WriteLine("Write brackets:");
-            while(true)
-            {
+            while(true) {
+
                 string bracketsString = Console.ReadLine();
                 PrintResult(verificator.IsBalancedBracketsString(bracketsString));
                 verificator = new BalanceVerificator();
@@ -26,7 +26,7 @@ namespace AkvelonTask
                     Console.WriteLine("BALANCED, returns -1");
                     break;
                 default:
-                    Console.WriteLine("NOT BALANCED ({0}), returns {0}", result + 1);
+                    Console.WriteLine("NOT BALANCED ({0}), returns {0}", result);
                     break;
             }
         }
